@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "removeComments": true,
+        "outDir": "build",
+        "moduleResolution": "Node",
+        "strictNullChecks": true,
+        "lib": [
+            "es2020"
+        ]
+    },
+    "exclude": [
+        "**/*.spec.ts"
+    ]
+}
