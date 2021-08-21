@@ -14,13 +14,13 @@
  * 
  */
 
-import { FizzBuzz } from './fizzbuzz';
+import { RecursiveFizzBuzz } from './fizzbuzz';
 
 describe('FizzBuzz', () => {
     describe('getFizzBuzz', () => {
         it('Given 1, returns "1"', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(1);
@@ -31,7 +31,7 @@ describe('FizzBuzz', () => {
 
         it('Given 2, returns "1, 2"', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(2);
@@ -42,7 +42,7 @@ describe('FizzBuzz', () => {
 
         it('Given 3, returns "1, 2, Fizz"', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(3);
@@ -53,7 +53,7 @@ describe('FizzBuzz', () => {
 
         it('Given 5, returns "1, 2, Fizz, 4, Buzz"', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(5);
@@ -64,7 +64,7 @@ describe('FizzBuzz', () => {
 
         it('Given 15, returns correct string', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(15);
@@ -75,7 +75,7 @@ describe('FizzBuzz', () => {
         
         it('Given 18, returns correct string', () => {
             // Arrange
-            const sut = new FizzBuzz();
+            const sut = new RecursiveFizzBuzz();
 
             // Act
             const result = sut.getFizzBuzz(18);

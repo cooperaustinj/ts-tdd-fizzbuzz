@@ -7,9 +7,11 @@
  * For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
  */
 
-import { FizzBuzz } from './fizzbuzz';
+import { IFizzBuzz, RecursiveFizzBuzz } from './fizzbuzz';
 
-const input:number  = parseInt(process.argv.slice(2)[0]);
-const fb = new FizzBuzz();
+const input: number = parseInt(process.argv.slice(2)[0]);
+const fb: IFizzBuzz = new RecursiveFizzBuzz();
 
 console.log(fb.getFizzBuzz(input));
+
+fb.getFizzBuzz(12);
